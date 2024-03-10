@@ -16,13 +16,18 @@ from s_car import Car, EletricCar, Battery
 # car.increment_odometer(-1)
 # car.read_odometer()
 
-car = EletricCar('nissan', 'leaf', 2024)
-print(car.get_descriptive_name())
-car.battery.describe_battery()
-car.battery.get_range()
+# car = EletricCar('nissan', 'leaf', 2024)
+# print(car.get_descriptive_name())
+# car.battery.describe_battery()
+# car.battery.get_range()
 
-eletric_car = EletricCar('nissan', 'leaf', 2022)
-eletric_car.battery = Battery(battery_size=65)
+# eletric_car = EletricCar('nissan', 'leaf', 2022)
+# eletric_car.battery = Battery(battery_size=65)
 
-eletric_car.battery.describe_battery()
-eletric_car.battery.get_range()
+# eletric_car.battery.describe_battery()
+# eletric_car.battery.get_range()
+
+another_car = EletricCar('nissan', 'leaf', 2020)
+another_car.battery.get_range()
+another_car.battery.upgrade_battery()
+another_car.battery.get_range()

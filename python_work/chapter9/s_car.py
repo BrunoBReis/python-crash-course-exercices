@@ -53,6 +53,12 @@ class Battery:
             range = 225
         print(f"This car can drive {range} miles")
 
+    def upgrade_battery(self):
+        if self.battery_size < 65:
+            self.battery_size = 65
+        else:
+            print(f"Battery is already {self.battery_size} KWh")
+
 
 class EletricCar(Car):
     """Represent apsects of an eletric car"""

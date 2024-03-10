@@ -21,6 +21,7 @@ class User:
         self.logging_atempts += 1
 
     def reset_loggin_attempts(self):
+        """Reset all loggin atempts"""
         self.logging_atempts = 0
 
 

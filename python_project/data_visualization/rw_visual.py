@@ -3,15 +3,18 @@ from random_walk import RandomWalk
 
 while True:
     # Make random walk
-    rw = RandomWalk(50_000)
+    rw = RandomWalk()
     rw.fill_walk()
 
     # Plot graph
     plt.style.use('classic')
     fig, ax = plt.subplots(figsize=(10,6), dpi=128)
     point_numbers = range(rw.num_points)
-    ax.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Blues,
-               edgecolors='none', s=1)
+    # Using scatter
+    # ax.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Blues,
+    #            edgecolors='none', s=1)
+    # Using plot 
+    ax.plot(rw.x_values, rw.y_values, linewidth=1)
     ax.set_aspect('equal') # Both x and y have equal spacing
 
     # Emphasize the first and last points

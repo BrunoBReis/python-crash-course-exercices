@@ -7,11 +7,11 @@ def main():
 
     # Create a D6 and D10
     die_1 = Die()
-    die_2 = Die(10)
+    die_2 = Die()
 
     # Make some rolls
     results = []
-    for rull_num in range(50_000):
+    for rull_num in range(10):
         result = die_1.roll() + die_2.roll()
         results.append(result)
 
@@ -32,7 +32,8 @@ def main():
     fig.update_layout(xaxis_dtick=1) # Every label is visible
 
     # Creats a HTML file in figures
-    fig.write_html(file_path)
+    # fig.write_html(file_path)
+    fig.show()
 
 
 if __name__ == '__main__':

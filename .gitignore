@@ -3,3 +3,6 @@ python_work/**/__pycache__/
 
 # Ignore any file with a .pyc extension in any subdirectory of python_work
 python_work/**/*.pyc
+
+# Ignore compiled Python files in any subdirectory of python_work
+python_project/**/__pycache__/

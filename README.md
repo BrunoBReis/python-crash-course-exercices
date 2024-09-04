@@ -1,7 +1,6 @@
-# python_crash_course_exercices
-I'll do all exercices in this book.
+# Python Study
+This [book](https://ehmatthes.github.io/pcc_2e/regular_index/) was use for studying.
 
-## The use of 'e' and 's'
-e is alias for exercice
-
-s is alias for study
+## Alias
+- **"e"** is an alias for exercice
+- **"s"** is an alias for study
